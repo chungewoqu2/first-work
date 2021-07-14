@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+    <form action="/search-post-back/" method="post">
+        {% csrf_token %}
+        <p><span>name:</span><input type="text" name="name"></p>
+        <p><span>grade:</span><input type="text" name="grade"></p>
+        <p><span>new name:</span><input type="text" name="new-name"></p>
+        <p><span>new grade:</span><input type="text" name="new-grade"></p>
+        <input type="submit" name="submit" value="添加数据">
+        <input type="submit" name="submit" value="删除数据">
+        <input type="submit" name="submit" value="修改数据">
+        <input type="submit" name="submit" value="显示所有数据"></br>
+        <input type="reset" value="重置">
+    </form>
+
+</body>
+</html>
+
